@@ -1,0 +1,59 @@
+@import url("./_utility.css");
+
+/* cards */
+section.card {
+    background-color: var(--clr-white-200);
+    padding: 4rem 6rem 2rem 6rem;
+  }
+  section.card .wrapper {
+    text-align: center;
+    padding-right: 2.5rem;
+  }
+  section.card .wrapper > div {
+    padding-left: 2.5rem;
+  }
+  section.card .wrapper img {
+    width: 100px;
+  }
+  section.card .wrapper h3 {
+    padding: 1rem 0;
+    color: var(--clr-blue-200);
+  }
+  section.card .wrapper p {
+    line-height: 1.6rem;
+    color: var(--clr-blue-100);
+  }
+  /* input-box */
+  section.card .container {
+    margin: 4rem 0;
+    text-align: center;
+  }
+  section.card .container h2 {
+    font-size: 3rem;
+  }
+  section.card .container div:first-child {
+    flex: 1 0 40%;
+  }
+  @media (max-width: 900px) {
+    section.card .wrapper {
+      padding: 3rem 1rem;
+      flex-direction: column;
+      text-align: center;
+    }
+    section.card {
+      padding: 0;
+    }
+    section.card .wrapper > div {
+      padding-left: 0;
+      padding-bottom: 2rem;
+    }
+    section.card .container {
+      margin: 0rem 1rem;
+      padding: 2rem 0;
+      flex-direction: column;
+    }
+    section.card .container h2 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+  }

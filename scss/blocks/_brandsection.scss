@@ -1,0 +1,112 @@
+@import url("./_utility.css");
+
+
+/* Brand section */
+
+section.branding {
+  background: var(--clr-blue-300);
+  padding: 6rem;
+  overflow-y: hidden;
+  position: relative;
+}
+
+section.branding .text {
+  flex: 1 0 40%;
+  color: var(--clr-white-200);
+  position: relative;
+}
+
+section.branding .text h2 {
+  color: var(--clr-white-200);
+  font-size: 2.5rem;
+}
+
+section.branding .text p {
+  line-height: 1.6rem;
+  padding: 1.5rem 0;
+}
+
+section.branding .text .btn {
+  background: none;
+  border: 1px solid var(--clr-white-200);
+  transition: all 0.3s ease-in-out;
+}
+
+section.branding .text .btn:hover {
+  background: var(--clr-white-200);
+  color: var(--clr-blue-300);
+}
+
+section.branding .text .inner {
+  z-index: 2;
+  position: relative;
+}
+
+section.branding .text img {
+  position: absolute;
+  transform: scale(2.5);
+  top: -220px;
+  left: 50px;
+}
+
+section.branding .images {
+  flex: 1 0 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  padding-left: 4rem;
+  /* position: relative; */
+}
+
+section.branding img {
+  width: 70%;
+}
+@media (max-width: 1200px) {
+  section.branding .text img {
+    position: absolute;
+    transform: scale(2.5);
+    top: -20px;
+    left: 50px;
+  }
+  section.branding .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  section.branding {
+    padding: 3rem 1rem;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  section.branding .text img {
+    transform: scale(1);
+    top: -550px;
+    left: -200px;
+  }
+  section.branding .images {
+    padding-bottom: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0rem;
+  }
+  section.branding img {
+    width: 100%;
+  }
+  section.branding .text h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  section.branding {
+    padding: 3rem 1rem;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  section.branding .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.branding .text img {
+    transform: scale(1.5);
+    top: -350px;
+    left: -200px;
+  }
+}

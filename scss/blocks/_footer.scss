@@ -1,0 +1,30 @@
+@import url("./_utility.css");
+
+/* Footer section */
+footer {
+    padding: 2rem 6rem;
+    background-color: var(--clr-blue-300);
+  }
+  footer img {
+    width: 150px;
+  }
+  footer ul li {
+    padding-left: 2rem;
+  }
+  footer .fab {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    color: var(--clr-white-100);
+    transition: all 0.3s ease-in-out;
+  }
+  footer .fab:hover {
+    color: var(--clr-pink-200);
+  }
+  @media (max-width: 900px) {
+    footer {
+      flex-direction: column-reverse;
+    }
+    footer .footer-links {
+      padding: 1rem 0;
+    }
+  }
